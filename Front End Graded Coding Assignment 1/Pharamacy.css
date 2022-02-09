@@ -1,0 +1,170 @@
+body {
+  background-color: honeydew;
+}
+header {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+footer {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  position: relative;
+  bottom: 0%;
+  text-align: center;
+}
+#navigate {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.offers {
+  display: inline-block;
+}
+
+.offers img {
+  object-fit: cover;
+}
+
+.menu {
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu li {
+  padding: 10px;
+  display: inline-block;
+}
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.menu li:nth-child(2):hover #Med_List,
+.menu li:nth-child(3):hover #Hlth_Care_List {
+  display: block;
+  position: absolute;
+  width: auto;
+}
+#Med_List,
+#Hlth_Care_List {
+  position: absolute;
+  width: auto;
+  max-width: 150px;
+  display: none;
+  top: 40px;
+  background-color: whitesmoke;
+  padding: 0%;
+}
+
+#Med_List li a,
+#Hlth_Care_List li a {
+  display: block;
+  color: blue;
+}
+
+.specialOffer {
+  margin: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.products {
+  position: relative;
+  border-radius: 10px;
+  margin: 5px;
+  width: 300px;
+  height: 250px;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.productimg {
+  position: relative;
+  border-radius: 10px;
+  top: 50px;
+  width: 299px;
+  height: 100px;
+  display: inline-block;
+}
+
+.productimg img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.productimg:hover {
+  width: 310px;
+  height: 110px;
+}
+
+div.price {
+  position: relative;
+  top: 55px;
+  color: rgb(76, 76, 240);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+div.offer {
+  position: relative;
+  top: 55px;
+  color: rgb(76, 76, 240);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.addtocart {
+  position: absolute;
+  bottom: 0%;
+  transition: 0.5s ease;
+  opacity: 1;
+  overflow: hidden;
+}
+
+button {
+  background-color: rgba(231, 240, 240, 0.3);
+  border: 2px solid rgb(116, 54, 224);
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 279px;
+  padding: 5px;
+  color: orange;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+div.addtocart button[type="submit"]:focus {
+  background: rgb(250, 234, 230);
+  border: rgb(0, 255, 76);
+}
+
+.proddesc {
+  position: absolute;
+  top: 0%;
+  background-color: rgba(231, 240, 240, 0.3);
+  width: 280px;
+  margin-left: 0%;
+  border-radius: 10px;
+  max-width: 280px;
+  transition: 0.5s ease;
+  opacity: 1;
+  overflow: hidden;
+  color: black;
+  padding: 5px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title>Pharmacy Shop</title>
+    <link rel="stylesheet" href="Pharamacy.css">
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("offer").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("offer").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "images/Animation/ani2.png";
+        images[1] = "images/Animation/ani3.jpg";
+        images[2] = "images/Animation/ani4.jpg";
+    </script>
+</head>
+<body onload = "startTimer()"">
+    <header>Pharmacy</header>
+    <section id="navigate">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Medicines</a>
+                    <ul id="Med_List">
+                       <li> <a href="#">Fever</a> </li>
+                       <li> <a href="#">Muscle Pain</a> </li>
+                       <li> <a href="#">Cold & Cough</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">Health Care</a>
+                    <ul id="Hlth_Care_List">
+                        <li>  <a href="#">Baby Care</a> </li>
+                        <li> <a href="#">Skin Care</a>  </li>
+                        <li> <a href="#">Home Care</a>  </li>
+                        <li> <a href="#">Personal Care</a></li>
+                        <li> <a href="#">Pet Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="Lab_Test.html">Lab Test</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <article id="medicaloffers">
+            <div class="offers">
+                <img id="offer" src="images/Animation/ani1.jpg"  alt="Offer";>             
+            </div>
+        </article>
+
+        <article class="specialOffer">
+            <h2>Covid Care</h2>
+            <div class="products">
+                <div class="proddesc">Covid Test Kid</div>
+                <div class="productimg">
+                  <img src="images\Products\c1.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 45</div>
+                <div class="offer">Offer: Rs. 30/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+    
+            <div class="products">
+                <div class="proddesc">Covid Essentials</div>
+                <div class="productimg">
+                  <img src="images\Products\c2.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 99</div>
+                <div class="offer">Offer: Rs. 87/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+    
+            <div class="products">
+                <div class="proddesc">Sanitizer Bottel</div>
+                <div class="productimg">
+                  <img src="images\Products\c3.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 240</div>
+                <div class="offer">Offer: Rs. 170/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+    
+            <div class="products">
+                <div class="proddesc">Mask</div>
+                <div class="productimg">
+                  <img src="images\Products\c4.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 40</div>
+                <div class="offer">Offer: Rs. 30/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+        </article>
+
+        <article class="specialOffer">
+            <h2>Diabetes Care</h2>
+            <div class="products">
+                <div class="proddesc">BGR-34</div>
+                <div class="productimg">
+                  <img src="images\Products\d1.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 100</div>
+                <div class="offer">Offer: Rs. 80/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+    
+            <div class="products">
+                <div class="proddesc">Chyawanprash</div>
+                <div class="productimg">
+                  <img src="images\Products\d2.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 150</div>
+                <div class="offer">Offer: Rs. 135/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+    
+            <div class="products">
+                <div class="proddesc">Colgate Swarna Vedshakti</div>
+                <div class="productimg">
+                  <img src="images\Products\d3.jpg" alt="GL News" />
+                </div>
+                <div class="price">Rs. 120</div>
+                <div class="offer">Offer: Rs. 100/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+    
+            <div class="products">
+                <div class="proddesc">UNIBIC</div>
+                <div class="productimg">
+                  <img src="images\Products\d4.png" alt="GL News" />
+                </div>
+                <div class="price">Rs. 50</div>
+                <div class="offer">Offer: Rs. 40/-</div>
+                <div class="addtocart"><button type="submit">Add to Cart</button></div>
+            </div>
+        </article>
+    </section>
+
+    <footer>@copyright. Only for demonstration purposes</footer>
+</body>
+</html>

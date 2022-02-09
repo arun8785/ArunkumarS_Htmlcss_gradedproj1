@@ -1,0 +1,85 @@
+.labtestform {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 50%;
+  float: left;
+}
+.imageshow {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 30%;
+  float: right;
+}
+article {
+  min-width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  /* background-color: tomato; */
+}
+.formdetails {
+  display: inline-block;
+}
+input {
+  width: 300px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  height: 30px;
+}
+input:focus {
+  outline: none !important;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#district {
+  height: 50px;
+}
+
+.imageshow img {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input[name^="option"] {
+  width: 20px;
+  height: 20px;
+}
+article h3::after {
+  content: "*";
+  color: red;
+}
+button {
+  display: block;
+  margin: 20px;
+  width: 80px;
+  border-radius: 4px;
+  height: 30px;
+  color: white;
+  font-size: 18px;
+  float: left;
+  border: none;
+  background-color: rgb(175, 102, 243);
+}
+
+a {
+  display: block;
+  margin: 20px;
+  width: 200px;
+  border-radius: 4px;
+  height: 30px;
+  padding: 1px 6px 1px 6px;
+  color: white;
+  font-size: 18px;
+  float: left;
+  border: none;
+  background-color: rgb(175, 102, 243);
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  appearance: auto;
+}
